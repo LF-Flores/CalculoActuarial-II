@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\begin{document}
+<<setup, include=FALSE>>=
+library(knitr)
+opts_chunk$set(
+concordance=TRUE,
+cache = TRUE
+)
+@
+
+\noindent Hola, clase de actuarial. El siguiente es un bloque de R tras haber utilizado el comando de instalacion \texttt{install.packages("knitr")}:
+<<>>=
+anualidad <- function(x,i, N, tiempo = "F", tipo = "V"){
+  valor_futuro <- ((1+i)^N -1)/i
+  if(tipo == "A") valor_futuro <- valor_futuro+(1+i)^N
+  if(tiempo == "P") valor_futuro <- valor_futuro/(1+i)^N
+  return(x*valor_futuro)
+}
+@
+
+
+
+
+\end{document}
