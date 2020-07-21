@@ -1,6 +1,14 @@
 \documentclass{article}
 
 \begin{document}
+\noindent Hola, clase de actuarial. Esto es un ejemplo del paquete \texttt{xtables}.
+<<results='asis'>>=
+library("xtable")
+
+data <- mtcars
+prueba_tabla <- xtable(data)
+print(prueba_tabla, include.rownames=FALSE)
+@
 
 
 
