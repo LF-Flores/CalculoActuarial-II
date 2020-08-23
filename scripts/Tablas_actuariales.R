@@ -79,5 +79,3 @@ A*500000
 # calcular el valor presente actuarial.
 
 axn(actuarialtable=soaAct, x=65)
-
-?axn

@@ -1,3 +1,10 @@
 # Ignorando checkpoints de cuarenos
-/Cuadernos/.ipynb_checkpoints
+/*/.ipynb_checkpoints
 .Rproj.user
+
+/*/*.log
+/*/*.synctex.gz
+/*/*.aux
+
+*.Rhistory
+
